@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wpfUtils\**" />
+    <EmbeddedResource Remove="wpfUtils\**" />
+    <None Remove="wpfUtils\**" />
+    <Page Remove="wpfUtils\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ModelClient\ModelClient.csproj" />
+    <ProjectReference Include="..\MVVMTools\MVVMTools.csproj" />
+  </ItemGroup>
+
+</Project>

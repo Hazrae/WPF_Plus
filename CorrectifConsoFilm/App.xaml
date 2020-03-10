@@ -1,0 +1,10 @@
+﻿<Application x:Class="CorrectifConsoFilm.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:CorrectifConsoFilm"
+             xmlns:vm="clr-namespace:CorrectifConsoFilm.ViewModels"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <vm:FilmViewModel x:Key="Film"/>
+    </Application.Resources>
+</Application>
